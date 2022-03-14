@@ -1,2 +1,6 @@
 # Project exclude paths
 /target/
+
+.idea
+pom.xml
+Bator_Shaibonov_JavaRush_Project_1.iml

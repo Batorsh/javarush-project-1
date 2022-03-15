@@ -9,8 +9,6 @@ import java.util.Map;
 
 public class StaticMethodBox {
 
-    //private static final char[] ALPHABET = CypherBox.ALPHABET;
-
     public void startStaticMethod(String addressOfFile, String addressOfFileForWrite, String adressOfFileForExample) {
         String exampleText = FileReaderWriter.readFromFile(adressOfFileForExample);
         char[] exampleCharacters = exampleText.toCharArray();
@@ -35,7 +33,6 @@ public class StaticMethodBox {
         }
         System.out.println("Минимальное отличие: " + minDifference + ". Ключ: " + resultKey);
         FileReaderWriter.writeToFile(addressOfFileForWrite, resultOutputCharacters);
-
     }
 
     public static HashMap<Character, Integer> createMapOfStatistics(char[] inputCharacters) {

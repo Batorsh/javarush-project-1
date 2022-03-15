@@ -33,11 +33,9 @@ public class CryptoController {
     void initialize() {
         startCryptoButton.setOnAction(event -> {
             System.out.println("Погнали");
-            int typeOfOperation = 1;
             String addressOfFileForRead = readFileField.getText().trim();
             String addressOfFileForWrite = writeFileField.getText().trim();
             String cypherKey = cypherKeyField.getText().trim();
-            //надо убрать проверку на создание файла, это есть в FileReaderWriter
             if (CheckInputData.isValidAddress(addressOfFileForRead, true, false) &&
                     CheckInputData.isValidAddress(addressOfFileForWrite, true, true) &&
                     CheckInputData.isValidKey(cypherKey)) {

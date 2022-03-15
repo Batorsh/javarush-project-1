@@ -10,7 +10,7 @@ public class CounterOfCoincidenceSpaceAndDots {
         int count = 0;
         for (int i = 0; i < charsForAnalyze.length - 1; i++) {
             if (SET_OF_PUNCTUATION_MARKS.contains(charsForAnalyze[i])) {
-                if (charsForAnalyze[i + 1] == ' ' || charsForAnalyze[i + 1] == '\n') {
+                if (charsForAnalyze[i + 1] == ' ' || charsForAnalyze[i + 1] == '\n' || charsForAnalyze[i + 1] == '\t') {
                     count++;
                 }
             }

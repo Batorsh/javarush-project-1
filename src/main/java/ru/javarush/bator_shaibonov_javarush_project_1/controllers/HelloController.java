@@ -38,8 +38,6 @@ public class HelloController {
         cryptoButton.setOnAction(event -> {
             cryptoButton.getScene().getWindow().hide();
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("crypto-view.fxml"));
-            //fxmlLoader.setLocation(getClass().getResource("crypto-view.fxml"));
-
             try {
                 fxmlLoader.load();
             } catch (IOException e) {
@@ -55,8 +53,6 @@ public class HelloController {
             CryptoUncryptoBox.uncryptoMode = true;//Меняем знак ключа, если выбран режим дешифровки
             uncryptoButton.getScene().getWindow().hide();
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("crypto-view.fxml"));
-            //fxmlLoader.setLocation(getClass().getResource("crypto-view.fxml"));
-
             try {
                 fxmlLoader.load();
             } catch (IOException e) {
@@ -71,7 +67,6 @@ public class HelloController {
         uncryptoBruteForceButton.setOnAction(event -> {
             uncryptoBruteForceButton.getScene().getWindow().hide();
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("bruteforce-view.fxml"));
-            //fxmlLoader.setLocation(getClass().getResource("crypto-view.fxml"));
             try {
                 fxmlLoader.load();
             } catch (IOException e) {
@@ -86,7 +81,6 @@ public class HelloController {
         uncryptoStaticMethodButton.setOnAction(event -> {
             uncryptoStaticMethodButton.getScene().getWindow().hide();
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("staticmethod-view.fxml"));
-            //fxmlLoader.setLocation(getClass().getResource("crypto-view.fxml"));
             try {
                 fxmlLoader.load();
             } catch (IOException e) {

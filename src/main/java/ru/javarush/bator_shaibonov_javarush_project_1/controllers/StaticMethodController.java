@@ -33,11 +33,9 @@ public class StaticMethodController {
     void initialize() {
         startStaticMethodButton.setOnAction(event -> {
             System.out.println("Погнали");
-            int typeOfOperation = 1;
             String addressOfFileForRead = readStaticMethodFileField.getText().trim();
             String addressOfFileForWrite = writeStaticMethodFileField.getText().trim();
             String addressOfFileForExample = readExampleStaticMethodFileField.getText().trim();
-            //надо убрать проверку на создание файла, это есть в FileReaderWriter
             if (CheckInputData.isValidAddress(addressOfFileForRead, true, false) &&
                     CheckInputData.isValidAddress(addressOfFileForWrite, true, true) &&
                     CheckInputData.isValidAddress(addressOfFileForExample, true, false)) {

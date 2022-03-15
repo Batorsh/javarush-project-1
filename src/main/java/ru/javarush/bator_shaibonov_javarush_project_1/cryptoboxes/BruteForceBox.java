@@ -2,7 +2,6 @@ package ru.javarush.bator_shaibonov_javarush_project_1.cryptoboxes;
 
 import ru.javarush.bator_shaibonov_javarush_project_1.fileinteractions.FileReaderWriter;
 
-import java.util.Arrays;
 
 public class BruteForceBox {
 
@@ -11,7 +10,7 @@ public class BruteForceBox {
         char[] inputCharacters = textFromFile.toCharArray();
         int resultKey = 0;
         char[] outputCharacters;
-        char[] resultOutputCharacters = new char[inputCharacters.length];
+        char[] resultOutputCharacters;
         int maxOfCoincidence = 0;
         for (int i = 0; i < CypherBox.ALPHABET_LENGTH; i++) {
             int keyForCheck = -1 * i;
@@ -20,7 +19,7 @@ public class BruteForceBox {
             if (maxOfCoincidence < count) {
                 maxOfCoincidence = count;
                 resultKey = keyForCheck;
-                //resultOutputCharacters = Arrays.copyOf(outputCharacters, outputCharacters.length);
+                //resultOutputCharacters = Arrays.copyOf(outputCharacters, outputCharacters.length); - здесь может быть слишком много перезаписей, поэтому вынес за скобки
             }
         }
         resultOutputCharacters = CypherBox.getShiftedArray(resultKey, inputCharacters);

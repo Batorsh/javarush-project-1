@@ -12,4 +12,6 @@ module ru.javarush.bator_shaibonov_javarush_project_1 {
 
     opens ru.javarush.bator_shaibonov_javarush_project_1 to javafx.fxml;
     exports ru.javarush.bator_shaibonov_javarush_project_1;
+    exports ru.javarush.bator_shaibonov_javarush_project_1.controllers;
+    opens ru.javarush.bator_shaibonov_javarush_project_1.controllers to javafx.fxml;
 }

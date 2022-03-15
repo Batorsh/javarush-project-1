@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #FFFFF0;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.javarush.bator_shaibonov_javarush_project_1.controllers.CryptoController">
+   <children>
+      <Button fx:id="startCryptoButton" layoutX="182.0" layoutY="332.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="335.0" text="Пуск!">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="177.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Криптоанализатор" textAlignment="CENTER" wrappingWidth="347.0">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text layoutX="177.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите адреса файлов и ключ" textAlignment="CENTER" wrappingWidth="347.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <TextField fx:id="readFileField" layoutX="116.0" layoutY="149.0" prefHeight="36.0" prefWidth="498.0" text="Адрес файла для чтения, например C:\test\file.txt">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="writeFileField" layoutX="117.0" layoutY="210.0" prefHeight="36.0" prefWidth="498.0" text="Адрес файла для записи, например C:\test\outputfile.txt">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cypherKeyField" layoutX="116.0" layoutY="271.0" prefHeight="36.0" prefWidth="498.0" text="Ключ шифрования (целое положительное число)">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

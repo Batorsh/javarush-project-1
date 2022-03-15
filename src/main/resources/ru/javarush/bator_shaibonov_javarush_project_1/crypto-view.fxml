@@ -8,7 +8,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #FFFFF0;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.javarush.bator_shaibonov_javarush_project_1.controllers.CryptoController">
    <children>
-      <Button fx:id="uncryptoStaticMethodButton" layoutX="182.0" layoutY="332.0" mnemonicParsing="false" onAction="#startCryptoButton" prefHeight="36.0" prefWidth="335.0" text="Пуск!">
+      <Button fx:id="startCryptoButton" layoutX="182.0" layoutY="332.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="335.0" text="Пуск!">
          <font>
             <Font size="15.0" />
          </font>

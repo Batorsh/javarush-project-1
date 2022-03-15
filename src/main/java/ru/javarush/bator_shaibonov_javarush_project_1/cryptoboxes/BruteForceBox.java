@@ -13,7 +13,7 @@ public class BruteForceBox {
         char[] outputCharacters;
         char[] resultOutputCharacters = new char[inputCharacters.length];
         int maxOfCoincidence = 0;
-        for (int i = 0; i < 42; i++) {
+        for (int i = 0; i < CypherBox.ALPHABET_LENGTH; i++) {
             int keyForCheck = -1 * i;
             outputCharacters = CypherBox.getShiftedArray(keyForCheck, inputCharacters);
             int count = CounterOfCoincidenceSpaceAndDots.countOfCoincidenceSpaceAndDots(outputCharacters);

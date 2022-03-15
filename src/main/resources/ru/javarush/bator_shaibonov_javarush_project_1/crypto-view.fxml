@@ -24,17 +24,17 @@
             <Font size="23.0" />
          </font>
       </Text>
-      <TextField fx:id="readFileField" layoutX="182.0" layoutY="149.0" prefHeight="36.0" prefWidth="335.0" text="Адрес файла для чтения">
+      <TextField fx:id="readFileField" layoutX="116.0" layoutY="149.0" prefHeight="36.0" prefWidth="498.0" text="Адрес файла для чтения, например C:\test\file.txt">
          <font>
             <Font size="15.0" />
          </font>
       </TextField>
-      <TextField fx:id="writeFileField" layoutX="183.0" layoutY="210.0" prefHeight="36.0" prefWidth="335.0" text="Адрес файла для записи">
+      <TextField fx:id="writeFileField" layoutX="117.0" layoutY="210.0" prefHeight="36.0" prefWidth="498.0" text="Адрес файла для записи, например C:\test\outputfile.txt">
          <font>
             <Font size="15.0" />
          </font>
       </TextField>
-      <TextField fx:id="cryptoKey" layoutX="183.0" layoutY="271.0" prefHeight="36.0" prefWidth="335.0" text="Ключ шифрования">
+      <TextField fx:id="cypherKeyField" layoutX="116.0" layoutY="271.0" prefHeight="36.0" prefWidth="498.0" text="Ключ шифрования (целое положительное число))">
          <font>
             <Font size="15.0" />
          </font>

@@ -11,6 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import ru.javarush.bator_shaibonov_javarush_project_1.HelloApplication;
+import ru.javarush.bator_shaibonov_javarush_project_1.cryptoboxes.CryptoUncryptoBox;
 
 public class HelloController {
 
@@ -49,7 +50,26 @@ public class HelloController {
             stage.setScene(new Scene(root));
             stage.showAndWait();
         });
+
+        uncryptoButton.setOnAction(event -> {
+            CryptoUncryptoBox.uncryptoMode = true;//Меняем знак ключа, если выбран режим дешифровки
+            uncryptoButton.getScene().getWindow().hide();
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("crypto-view.fxml"));
+            //fxmlLoader.setLocation(getClass().getResource("crypto-view.fxml"));
+
+            try {
+                fxmlLoader.load();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            Parent root = fxmlLoader.getRoot();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.showAndWait();
+        });
     }
+
+
 
 }
 

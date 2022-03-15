@@ -31,7 +31,7 @@ public class CheckInputData {
     }
 
     public static boolean isValidKey(String key) {
-            if (!Pattern.matches("[0-9]+", key)){
+            if (!Pattern.matches("[-]?[0-9]+", key)){
                 System.out.println("Ключ должен быть целым числом");
                 return false;
             }

@@ -67,6 +67,22 @@ public class HelloController {
             stage.setScene(new Scene(root));
             stage.showAndWait();
         });
+
+        uncryptoBruteForceButton.setOnAction(event -> {
+            //CryptoUncryptoBox.uncryptoMode = true;//Меняем знак ключа, если выбран режим дешифровки
+            uncryptoBruteForceButton.getScene().getWindow().hide();
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("bruteforce-view.fxml"));
+            //fxmlLoader.setLocation(getClass().getResource("crypto-view.fxml"));
+            try {
+                fxmlLoader.load();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            Parent root = fxmlLoader.getRoot();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.showAndWait();
+        });
     }
 
 

@@ -34,7 +34,7 @@
             <Font size="15.0" />
          </font>
       </TextField>
-      <TextField fx:id="cypherKeyField" layoutX="116.0" layoutY="271.0" prefHeight="36.0" prefWidth="498.0" text="Ключ шифрования (целое положительное число))">
+      <TextField fx:id="cypherKeyField" layoutX="116.0" layoutY="271.0" prefHeight="36.0" prefWidth="498.0" text="Ключ шифрования (целое положительное число)">
          <font>
             <Font size="15.0" />
          </font>
